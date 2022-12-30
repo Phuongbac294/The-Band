@@ -1,0 +1,16 @@
+:root {
+    --while-text-color : #ffffff;
+    --black-text-color : #000000;
+    --black-header-color : #000000;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
