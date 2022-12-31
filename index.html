@@ -1,48 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>THE BAND</title>
-    <link rel="icon" type="image/x-icon" href="./src/icon/title.jpg"> <!--icon cho thẻ title-->
-    <link rel="stylesheet" href="./src/css/main.css">
-    <link rel="stylesheet" href="./src/css/styles.css">
-    <link rel="stylesheet" href="./src/css/mobile.css">
-</head>
-<body>
+    <link rel="icon" type="image/x-icon" href="./src/icon/title.jpg" />
+    <!--icon cho thẻ title-->
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="./src/css/mobile.css" />
+    <link rel="stylesheet" href="./src/themify-icons/themify-icons.css" />
+  </head>
+  <body>
     <div id="main">
-
         <!-- Header -->
         <div id="header">
             <ul class="header__list">
-                <li class="header__item">HOME</li>
-                <li class="header__item">BAND</li>
-                <li class="header__item">TOUR</li>
-                <li class="header__item">CONTACT</li>
-                <li class="header__item">MORE
-                    
+            <li class="header__item">
+                <a href="#">HOME</a>
+            </li>
+            <li class="header__item">
+                <a href="#">BAND</a>
+            </li>
+            <li class="header__item">
+                <a href="#">TOUR</a>
+            </li>
+            <li class="header__item">
+                <a href="#">CONTACT</a>
+            </li>
+            <li class="header__item">
+                <a href="#">MORE <i class="header-icon ti-angle-down"></i></a>
+                <ul class="header__item-list">
+                <li class="header__item-list-item">
+                    <a href="#">Merchandise</a>
                 </li>
+                <li class="header__item-list-item">
+                    <a href="#">Extras</a>
+                </li>
+                <li class="header__item-list-item">
+                    <a href="#">Media</a>
+                </li>
+                </ul>
+            </li>
             </ul>
-            <div class="header__icon">
-                
+            <div class="header__search">
+            <i class="ti-search"></i>
             </div>
         </div>
 
         <!-- Slider -->
         <div id="slider">
-
+            <div class="slider__text">
+            <h3 class="slider__text-address">New York</h3>
+            <p class="slider__text-comment">
+                The atmosphere in New York is lorem ipsum.
+            </p>
+            </div>
+            <!-- <div class="slider__item">
+                    <div class="slider__text">
+                        <h2 class="slider__text-address">Chicago</h2>
+                        <p class="slider__text-comment">Thank you, Chicago - A night we won't forget.</p>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="slider__text">
+                        <h2 class="slider__text-address">Log Angeles</h2>
+                        <p class="slider__text-comment">We had the best time playing at Venice Beach!</p>
+                    </div>
+                </div> -->
         </div>
 
-        <!-- Content -->
+      <!-- Content -->
         <div id="content">
-
+            <div class="content__item">
+                <h2 class="content__item-heading">the band</h2>
+                <p class="content__item-text">We love music</p>
+                <p class="content__item-textcontent">
+                    We have created a fictional band website. Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    anim id est laborum consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea commodo consequat.
+                </p>
+                <div class=" row content__item-list">
+                    <div class=" col-third content__item-item">
+                        <p class="content__item-name">My tâm</p>
+                        <div class="content__item-img">               
+                            <img src="./src/img/the_band_name_mytam.jpg" alt="thành viên">
+                        </div>
+                    </div>
+                    <div class="col-third  content__item-item">
+                        <p class="content__item-name">Lý hải</p>
+                        <div class="content__item-img">               
+                            <img  src="./src/img/the_band_name_lyhai.jpg" alt="thành viên">
+                        </div>
+                    </div>
+                    <div class="col-third  content__item-item">
+                        <p class="content__item-name">Mo mo</p>
+                        <div class="content__item-img">               
+                            <img  src="./src/img/the_band_name_momo.jpg" alt="thành viên">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content__item">
+                    <h2 class="content__item-heading">TOUR DATES</h2>
+                    <p class="content__item-text">We love music</p>
+                
+                    <div class=" row content__item-list">
+                        <div class=" col-third content__item-item">
+                            <p class="content__item-name">My tâm</p>
+                            <div class="content__item-img">               
+                                <img src="./src/img/the_band_name_mytam.jpg" alt="thành viên">
+                            </div>
+                        </div>
+                        <div class="col-third  content__item-item">
+                            <p class="content__item-name">Lý hải</p>
+                            <div class="content__item-img">               
+                                <img  src="./src/img/the_band_name_lyhai.jpg" alt="thành viên">
+                            </div>
+                        </div>
+                        <div class="col-third  content__item-item">
+                            <p class="content__item-name">Mo mo</p>
+                            <div class="content__item-img">               
+                                <img  src="./src/img/the_band_name_momo.jpg" alt="thành viên">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <!-- Footer -->
-        <div id="footer">
 
-        </div>
+      <!-- Footer -->
+      <div id="footer"></div>
     </div>
-</body>
+  </body>
 </html>

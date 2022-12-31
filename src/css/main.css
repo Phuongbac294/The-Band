@@ -1,16 +1,27 @@
 :root {
-    --while-text-color : #ffffff;
+    --white-text-color : #ffffff;
     --black-text-color : #000000;
     --black-header-color : #000000;
+    --white-background-color : #ffffff;
 
 }
 
 html {
     font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.row {
+    width: 100%;
+}
+
+.col-third {
+    width: 33.33333%;
+    float: left;
 }
