@@ -17,11 +17,44 @@ html {
     box-sizing: border-box;
 }
 
+body {
+    font-size: 1.5rem;
+}
+
 .row {
     width: 100%;
 }
 
+.row__black {
+    width: 100%;
+    background-color: var(--black-header-color);
+    color: var(--white-text-color);
+}
 .col-third {
     width: 33.33333%;
     float: left;
 }
+
+.btn {
+    height: 40px;
+    background-color: #000000;
+    color: var(--white-text-color);
+    padding: 0 16px;
+    font-size: 1.5rem;
+    border-style: none;
+}
+
+.btn:hover {
+    opacity: 0.5;
+}
+
+.input {
+    height: 40px;
+    padding: 8px;
+    width: 100%;
+}
+
+.open {
+    display: block;
+}
+
