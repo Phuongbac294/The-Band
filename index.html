@@ -21,13 +21,13 @@
                 <a href="#">HOME</a>
             </li>
             <li class="header__item">
-                <a href="#">BAND</a>
+                <a href="#band">BAND</a>
             </li>
             <li class="header__item">
-                <a href="#">TOUR</a>
+                <a href="#tour">TOUR</a>
             </li>
             <li class="header__item">
-                <a href="#">CONTACT</a>
+                <a href="#contact">CONTACT</a>
             </li>
             <li class="header__item">
                 <a href="#">MORE <i class="header-icon ti-angle-down"></i></a>
@@ -74,7 +74,7 @@
       <!-- Content -->
         <div id="content">
             <div class="row">
-                <div class="content__item">
+                <div id="band" class="content__item">
                     <h2 class="content__item-heading">the band</h2>
                     <p class="content__item-text">We love music</p>
                     <p class="content__item-textcontent">
@@ -113,7 +113,7 @@
                 </div>
             </div>
             <div class="row__black">
-                <div class="content__item">
+                <div id="tour" class="content__item">
                     <h2 class="content__item-heading">TOUR DATES</h2>
                     <p class="content__item-text">Remember to book your tickets!</p>
                     <ul class="content__item-month">
@@ -160,7 +160,7 @@
             </div>
 
             <div class="row">
-                <div class="content__item">
+                <div id="contact" class="content__item">
                     <h2 class="content__item-heading">CONTACT</h2>
                     <p class="content__item-text">Fan? Drop a note!</p>
                     <div class="content__item-contact">
@@ -209,7 +209,7 @@
         </div>
 
         <!-- Tickets -->
-        <div class="tickets">
+        <div class="tickets ">
             <div class="tickets__nav">
                 <i class="ti-briefcase"></i>
                 Tickets
@@ -241,4 +241,25 @@
         </div>
     </div>
   </body>
+  <script>
+        const buyBtns = document.querySelectorAll(".btn__buy");
+        const ticket = document.querySelector(".tickets");
+        const Close1 = document.querySelector(".tickets__nav-close");
+        const Close2 = document.querySelector(".btn-close");
+
+        function BuyTicket() {
+            ticket.classList.add("open");
+        }
+        
+        function CloseTicket() {
+            ticket.classList.remove("open");
+        }
+        for ( const bytBtn of buyBtns) {
+            bytBtn.addEventListener("click", BuyTicket)
+        }
+
+        Close1.addEventListener("click", CloseTicket);
+        Close2.addEventListener("click", CloseTicket);
+        console.log(buyBtns);
+  </script>
 </html>

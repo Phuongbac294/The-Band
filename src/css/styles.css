@@ -32,7 +32,7 @@
     background-color: #ccc;
 }
 
-.header__item:last-child:hover > .header__item-list{
+.header__item:last-child:hover  .header__item-list{
     display: block;
 } 
 
@@ -89,10 +89,11 @@
 
 /* Slider */
 #slider {
-    position: relative;
+    /* position: relative; */
     margin-top: var(--header-height);
     padding-top: 50%;
     background: url('../img/the_band_3.jpg') top center / cover no-repeat;
+    /* display: none; */
 }
 
 .slider__text {
@@ -327,6 +328,7 @@
 
 /* Tickets */
 .tickets {
+    display: none;
     width: 900px;
     height: 450px;
     line-height: 1.5;
@@ -334,11 +336,15 @@
     margin: auto;
     border: 1px solid rgb(105, 105, 105);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    position: absolute;
+    position: fixed;
+    animation: ticketFadeIn ease 0.3s;
     top: 50%;
     left: 50%;
     transform:translateX(-50%) translateY(-50%);
     background-color: #ffffff;
+}
+.tickets.open {
+    display: block;
 }
 
 .tickets__nav {
@@ -404,4 +410,14 @@
     float: right;
     line-height: 2;
     padding: 15px;
+}
+
+
+@keyframes ticketFadeIn {
+    from {
+        transform: translateY(-100%) translateX(-50%);
+    }
+    to {
+        transform: translateY(-50%) translateX(-50%);
+    }
 }
